@@ -88,12 +88,22 @@ class App extends Component {
                             <h3 className='toll--subheader'>Register Vehicle:</h3>
                             <p className='toll--body'>This feature allows the user to register it's vehicle and then use this information to pay toll taxes.</p>
 
-                            <form onSubmit={(event) => {event.preventDefault()
-                                const RegisterVehicle_vhNo = new FormData(event.target).get("RegisterVehicle_vhNo");
-                                const RegisterVehicle_vhtp = new FormData(event.target).get("RegisterVehicle_vhtp");
-                                const RegisterVehicle_vhModel = new FormData(event.target).get("RegisterVehicle_vhModel");
-                                this.state.simpcontract.methods.Register_Vehicle(RegisterVehicle_vhNo, RegisterVehicle_vhtp, RegisterVehicle_vhModel).send({ from:this.state.account ,gas:200000})
-                                this.loadBlockchainData()
+                            <form onSubmit={(event) => {
+                            event.preventDefault();
+                            const RegisterVehicle_vhNo = new FormData(event.target).get("RegisterVehicle_vhNo");
+                            const RegisterVehicle_vhtp = new FormData(event.target).get("RegisterVehicle_vhtp");
+                            const RegisterVehicle_vhModel = new FormData(event.target).get("RegisterVehicle_vhModel");
+                            this.state.simpcontract.methods.Register_Vehicle(RegisterVehicle_vhNo, RegisterVehicle_vhtp, RegisterVehicle_vhModel)
+                            .send({ from:this.state.account ,gas:200000})
+                            .then(() => {
+                                window.alert('Registered successfully');
+                                this.loadBlockchainData();
+                                event.target.reset();
+                            })
+                            .catch(error => {
+                                console.error(error);
+                                window.alert('An error occurred while registering the vehicle.');
+                            });
                             }}>
 
                             <label>{"Vehicle Number: "}</label>
@@ -125,6 +135,7 @@ class App extends Component {
                             <input id="ChargeBalance_amount" name ="ChargeBalance_amount" type="text" required /><br></br><br></br>
                             <input type="submit" hidden="" />
                             </form>
+                            
                         </>
                     }
 
@@ -144,6 +155,8 @@ class App extends Component {
                                 try {
                                     const payTollTaxConfirmation = await this.state.simpcontract.methods.Pay_Tolltax(PayTollTax_tollId, PayTollTax_tollNo, PayTollTax_vhNo, PayTollTax_vhtp, PayTollTax_vhModel).send({ from: this.state.account, gas: 2000000 })
                                     this.setState({ payTollTaxConfirmation: payTollTaxConfirmation.transactionHash })
+                                    alert('Toll tax paid successfully')
+                                    event.target.reset()
                                 } catch (error) {
                                     console.error(error)
                                     // Handle error, e.g., display an error message to the user
@@ -163,11 +176,6 @@ class App extends Component {
                                 <input id="PayTollTax_vhModel" name="PayTollTax_vhModel" type="text" required /><br /><br />
                                 <input type="submit" hidden="" />
                             </form>
-                            <p className='toll-result'>
-                                {this.state.payTollTaxConfirmation 
-                                    ? `Your payment was successful! Transaction` 
-                                    : 'Please submit the form to make a payment.'}
-                            </p>
                         </>
                     }
 
