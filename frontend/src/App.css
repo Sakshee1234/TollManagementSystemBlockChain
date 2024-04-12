@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+
+.sidenav{
+  width:25em;
+  background-color: #333;
+  /* height: 100vh;  */
+  min-height: 100vh;
+}
+
+.sidenav button {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav button:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav p, .sidenav button {font-size: 18px;}
+} */
+
+/*
+.sidenav p{
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+}*/
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.toll{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.toll {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.toll--account {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.curracc{
+  font-size: 11px;
+}
+
+.toll--header {
+  text-align: center;
+  color: #333;
+}
+
+.toll--subheader {
+  color: #333;
+  margin-top: 20px;
+}
+
+.toll--body {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+.toll--firstpg p{
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.toll--firstpg p:first-of-type {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.toll-result{
+  color: blue;
+}
+
+form input[type="submit"] {
+  display: block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100%;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.history-table th, .history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.history-table tr:hover {
+  background-color: #ddd;
+}
