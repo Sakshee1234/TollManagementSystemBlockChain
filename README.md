@@ -26,24 +26,24 @@ secure toll plaza management system.
 ## Application features:  
 
 * **Register Vehicle**: Vehicle owner can register vehicle here.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/324c4997-7c85-48c7-ac34-549856fb1dd2)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/324c4997-7c85-48c7-ac34-549856fb1dd2)
 * **Charge Balance**: Vehicle owner can charge their wallet with cryptocurrency here.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/849e9350-6203-4315-873e-8c48363252a9)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/849e9350-6203-4315-873e-8c48363252a9)
 
 * **Pay Toll Tax**: Vehicle owner can pay the toll fees for a particular toll here.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/610c81a9-8758-411c-b33d-3a7f5ea7d0bc)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/610c81a9-8758-411c-b33d-3a7f5ea7d0bc)
 
 * **Get History**: Vehicle owner can get their history of payment with respect to each toll station.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/d2c68b9c-3635-445c-9194-055464bfc509)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/d2c68b9c-3635-445c-9194-055464bfc509)
 
 * **Check Balance**: Vehicle owner can check balance in their wallet.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/b6139e4b-b7b4-48f8-8409-ef4d2d70bae0)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/b6139e4b-b7b4-48f8-8409-ef4d2d70bae0)
 
 * **Check Ownership**: Ownership of vehicle can be checked from particular account
 * ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/39affb79-43c0-47ba-9848-6c003499085c)
 
 * **Initialize Toll**: An admin an create account for new toll station.
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/dd31723c-e62f-40e6-81de-aea35ae576a0)
+ ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/dd31723c-e62f-40e6-81de-aea35ae576a0)
 
 * **Withdraw Amount**: Admin can withdraw amount to his own account.
 
