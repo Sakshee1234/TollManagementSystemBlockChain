@@ -40,7 +40,7 @@ secure toll plaza management system.
   ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/b6139e4b-b7b4-48f8-8409-ef4d2d70bae0)
 
 * **Check Ownership**: Ownership of vehicle can be checked from particular account
-* ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/39affb79-43c0-47ba-9848-6c003499085c)
+  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/39affb79-43c0-47ba-9848-6c003499085c)
 
 * **Initialize Toll**: An admin an create account for new toll station.
  ![image](https://github.com/Sakshee1234/TollManagementSystemBlockChain/assets/108331148/dd31723c-e62f-40e6-81de-aea35ae576a0)
